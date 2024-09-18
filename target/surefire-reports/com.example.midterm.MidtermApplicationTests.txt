@@ -1,44 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.example.midterm.MidtermApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 1.886 s <<< FAILURE! -- in com.example.midterm.MidtermApplicationTests
-com.example.midterm.MidtermApplicationTests.surname -- Time elapsed: 0.539 s <<< FAILURE!
-java.lang.AssertionError: APC John Del User expected:<Name(first=APC, last=Del User)> but was:<Name(first=APC, last=John)>
-	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)
-	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)
-	at com.example.midterm.MidtermApplicationTests.surname(MidtermApplicationTests.java:29)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-
-com.example.midterm.MidtermApplicationTests.remove -- Time elapsed: 0.003 s <<< FAILURE!
-java.lang.AssertionError: Csar APC User expected:<Name(first=APC, last=User)> but was:<Name(first=Csar, last=APC)>
-	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)
-	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)
-	at com.example.midterm.MidtermApplicationTests.remove(MidtermApplicationTests.java:35)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-
-com.example.midterm.MidtermApplicationTests.suffix -- Time elapsed: 0.002 s <<< FAILURE!
-java.lang.AssertionError: APC R User MSc MPH DRes/PhD expected:<Name(first=APC, last=User)> but was:<Name(first=APC, last=R)>
-	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)
-	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)
-	at com.example.midterm.MidtermApplicationTests.suffix(MidtermApplicationTests.java:75)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-
-com.example.midterm.MidtermApplicationTests.badNames_Success -- Time elapsed: 0.002 s <<< FAILURE!
-java.lang.AssertionError: ~~~ APC User ~~~ expected:<Name(first=APC, last=User)> but was:<Name(first=~~~, last=APC)>
-	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)
-	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)
-	at com.example.midterm.MidtermApplicationTests.badNames_Success(MidtermApplicationTests.java:85)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-
-com.example.midterm.MidtermApplicationTests.capitalisation -- Time elapsed: 0.002 s <<< FAILURE!
+Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.691 s <<< FAILURE! -- in com.example.midterm.MidtermApplicationTests
+com.example.midterm.MidtermApplicationTests.capitalisation -- Time elapsed: 0.005 s <<< FAILURE!
 java.lang.AssertionError: HEMANT AHIRKAR expected:<Name(first=Hemant, last=Ahirkar)> but was:<Name(first=HEMANT, last=AHIRKAR)>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)
