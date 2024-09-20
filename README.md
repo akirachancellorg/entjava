@@ -1,4 +1,4 @@
-# Chancellor Galiza Project 🚀
+# Midterm exam Project 🚀
 
 This Spring Boot Application contains five end points :
 

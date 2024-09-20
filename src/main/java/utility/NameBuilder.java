@@ -38,10 +38,14 @@ public class NameBuilder {
 					log.debug("Check if clean string [{}] is from list of suffixes [{}]", o, (Object) suffix );
 					if(i==0 || first==null) {							
 							first = convertName(o);	
-					}else {
-						if(last==null) {
+					} else {
+						if (last==null) {
 							last = convertName(o);
-						}						
+						} else if (last.equals("Del")) {
+							last = last + " " + convertName(o);
+						} else if (convertName(o).trim().equals("Del")) {
+							last = convertName(o);
+						} 
 					}
 				}
 			}
@@ -60,6 +64,14 @@ public class NameBuilder {
 	}
 	
 	private String convertName(String inputString) {
+		if (inputString.trim().equals("APC")) {
+			return "APC";
+		}
+
+		if (inputString.trim().substring(0,2).equals("de")) {
+			return inputString.trim();
+		}
+
 		log.debug("Converting name [{}] to Proper Case",inputString );
        
         if (inputString.length() == 1) {

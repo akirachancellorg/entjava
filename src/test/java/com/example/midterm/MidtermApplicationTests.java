@@ -53,7 +53,7 @@ class MidtermApplicationTests {
                 nameService.process("APC User - Bsc"));
         assertEquals("APC User | Bsc", new Name("APC", "User"),
                 nameService.process("APC User | Bsc"));
-        assertEquals("~~~ APC User ~~~", new Name("APC", "User"),
+        assertEquals("~~ ~APC User ~~~", new Name("APC", "User"),
                 nameService.process("~~~ APC User ~~~"));
         assertEquals("APC User Certified Professional", new Name("APC", "User"),
                 nameService.process("APC User Certified Professional"));
