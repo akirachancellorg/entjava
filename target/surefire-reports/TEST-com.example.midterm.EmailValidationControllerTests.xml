@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.midterm.MidtermApplicationTests" time="0.032" tests="7" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.midterm.EmailValidationControllerTests" time="1.88" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -64,15 +64,29 @@
     <property name="java.class.version" value="65.0"/>
     <property name="LOGGED_APPLICATION_NAME" value="[midterm] "/>
   </properties>
-  <testcase name="surname" classname="com.example.midterm.MidtermApplicationTests" time="0.003">
-    <system-out><![CDATA[2024-09-21T13:03:12.237+08:00  INFO 8868 --- [midterm] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.midterm.MidtermApplicationTests]: MidtermApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-09-21T13:03:12.239+08:00  INFO 8868 --- [midterm] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.midterm.MidtermApplication for test class com.example.midterm.MidtermApplicationTests
+  <testcase name="emailTest" classname="com.example.midterm.EmailValidationControllerTests" time="0.554">
+    <system-out><![CDATA[13:03:10.466 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.midterm.EmailValidationControllerTests]: EmailValidationControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:03:10.539 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.midterm.MidtermApplication for test class com.example.midterm.EmailValidationControllerTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.3)
+
+2024-09-21T13:03:10.793+08:00  INFO 8868 --- [midterm] [           main] c.e.m.EmailValidationControllerTests     : Starting EmailValidationControllerTests using Java 21.0.1 with PID 8868 (started by joren in C:\Users\joren\Desktop\ENTJAVA\ENTJAVAMidterms)
+2024-09-21T13:03:10.793+08:00  INFO 8868 --- [midterm] [           main] c.e.m.EmailValidationControllerTests     : No active profile set, falling back to 1 default profile: "default"
+2024-09-21T13:03:11.262+08:00  WARN 8868 --- [midterm] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-09-21T13:03:11.286+08:00  INFO 8868 --- [midterm] [           main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-09-21T13:03:11.653+08:00  INFO 8868 --- [midterm] [           main] c.e.m.EmailValidationControllerTests     : Started EmailValidationControllerTests in 1.017 seconds (process running for 1.653)
 ]]></system-out>
+    <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\joren\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.19\byte-buddy-agent-1.14.19.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
   </testcase>
-  <testcase name="remove" classname="com.example.midterm.MidtermApplicationTests" time="0.004"/>
-  <testcase name="simple" classname="com.example.midterm.MidtermApplicationTests" time="0.002"/>
-  <testcase name="suffix" classname="com.example.midterm.MidtermApplicationTests" time="0.002"/>
-  <testcase name="badNames_Success" classname="com.example.midterm.MidtermApplicationTests" time="0.002"/>
-  <testcase name="replace" classname="com.example.midterm.MidtermApplicationTests" time="0.002"/>
-  <testcase name="capitalisation" classname="com.example.midterm.MidtermApplicationTests" time="0.003"/>
 </testsuite>

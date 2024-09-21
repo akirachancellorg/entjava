@@ -1,13 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.example.midterm.MidtermApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.691 s <<< FAILURE! -- in com.example.midterm.MidtermApplicationTests
-com.example.midterm.MidtermApplicationTests.capitalisation -- Time elapsed: 0.005 s <<< FAILURE!
-java.lang.AssertionError: HEMANT AHIRKAR expected:<Name(first=Hemant, last=Ahirkar)> but was:<Name(first=HEMANT, last=AHIRKAR)>
-	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)
-	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)
-	at com.example.midterm.MidtermApplicationTests.capitalisation(MidtermApplicationTests.java:93)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 s -- in com.example.midterm.MidtermApplicationTests

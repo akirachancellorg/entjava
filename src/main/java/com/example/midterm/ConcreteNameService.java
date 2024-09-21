@@ -1,7 +1,6 @@
 package com.example.midterm;
 
 import dto.Name;
-import java.util.Objects;
 
 import org.springframework.stereotype.Component;
 import service.NameService;
@@ -25,9 +24,8 @@ public class ConcreteNameService implements NameService {
                 .replaceAll("[^a-zA-Z,]", " ")
                 .replaceAll("\\s{2,}", " ")
                 .trim();
-
-        System.out.println("name: " + name);
-        System.out.println("cleaned name: " + cleanName);
+        // Convert cleaned name to title case if it's in all upper or lower case
+        cleanName = toTitleCaseIfNecessary(cleanName);
 
         String[] parts;
         String fname = "", lname = "";
@@ -64,17 +62,23 @@ public class ConcreteNameService implements NameService {
 
         return new Name(fname, lname);
 
-        // Clean up extra spaces
-        // name = name.trim().replaceAll("\\s+", " ");
 
-        // Handle the format "First Last"
-        //String[] parts = cleanName.split(" ");
-        //String firstName = parts[0];
-        //String lastName = parts[1];
-
-
-
-
-        //return new Name(firstName, lastName);
+    }
+    // Utility function to handle capitalization
+    private String toTitleCaseIfNecessary(String name) {
+        if (name.equals(name.toUpperCase()) || name.equals(name.toLowerCase())) {
+            String[] words = name.split(" ");
+            StringBuilder titleCaseName = new StringBuilder();
+            for (String word : words) {
+                if (word.length() > 1) {
+                    titleCaseName.append(word.substring(0, 1).toUpperCase())
+                            .append(word.substring(1).toLowerCase()).append(" ");
+                } else {
+                    titleCaseName.append(word.toUpperCase()).append(" ");
+                }
+            }
+            return titleCaseName.toString().trim();
+        }
+        return name; // Return the original name if no changes needed
     }
 }
