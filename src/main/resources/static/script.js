@@ -1,6 +1,6 @@
 console.log("Script loaded"); // Add this at the top of script.js
 
-document.getElementById('nameForm').addEventListener('submit', function(event) {
+document.getElementById('nameForm').addEventListener('namesubmit', function(event) {
     event.preventDefault();
     const nameInput = document.getElementById('nameInput').value;
     console.log("Submitting:", nameInput); // Log the input
@@ -23,7 +23,7 @@ document.getElementById('nameForm').addEventListener('submit', function(event) {
         });
 });
 
-document.getElementById('emailForm').addEventListener('submit',function(event) {
+document.getElementById('emailForm').addEventListener('emailsubmit',function(event) {
     event.preventDefault();
     const emailInput = document.getElementById('emailInput').value;
     console.log("Submitting:", emailInput); // Log the input
